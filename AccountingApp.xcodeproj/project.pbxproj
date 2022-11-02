@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4218DE92290A109700F8F6E4 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218DE91290A109700F8F6E4 /* DailyViewController.swift */; };
+		4218DE96290A210400F8F6E4 /* DailyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218DE95290A210400F8F6E4 /* DailyCollectionViewCell.swift */; };
+		4299491D2911FDDA0038F443 /* DailyViewDataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4299491C2911FDDA0038F443 /* DailyViewDataSourse.swift */; };
 		42AC5C9A290782C800C53D45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AC5C99290782C800C53D45 /* AppDelegate.swift */; };
 		42AC5C9C290782C800C53D45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AC5C9B290782C800C53D45 /* SceneDelegate.swift */; };
 		42AC5C9E290782C800C53D45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AC5C9D290782C800C53D45 /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4218DE91290A109700F8F6E4 /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
+		4218DE95290A210400F8F6E4 /* DailyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCollectionViewCell.swift; sourceTree = "<group>"; };
+		4299491C2911FDDA0038F443 /* DailyViewDataSourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewDataSourse.swift; sourceTree = "<group>"; };
 		42AC5C96290782C800C53D45 /* AccountingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccountingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42AC5C99290782C800C53D45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42AC5C9B290782C800C53D45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,9 +45,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4218DE93290A10BD00F8F6E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4218DE94290A10CC00F8F6E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4218DE95290A210400F8F6E4 /* DailyCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4218DE97290A23A400F8F6E4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4299491C2911FDDA0038F443 /* DailyViewDataSourse.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		42AC5C8D290782C800C53D45 = {
 			isa = PBXGroup;
 			children = (
+				4218DE93290A10BD00F8F6E4 /* Model */,
+				4218DE94290A10CC00F8F6E4 /* View */,
+				4218DE97290A23A400F8F6E4 /* ViewModel */,
 				42AC5C98290782C800C53D45 /* AccountingApp */,
 				42AC5C97290782C800C53D45 /* Products */,
 			);
@@ -62,6 +94,7 @@
 				42AC5C9B290782C800C53D45 /* SceneDelegate.swift */,
 				42AC5C9D290782C800C53D45 /* ViewController.swift */,
 				42AC5C9F290782C800C53D45 /* Main.storyboard */,
+				4218DE91290A109700F8F6E4 /* DailyViewController.swift */,
 				42AC5CA5290782CA00C53D45 /* Assets.xcassets */,
 				42AC5CA7290782CA00C53D45 /* LaunchScreen.storyboard */,
 				42AC5CAA290782CA00C53D45 /* Info.plist */,
@@ -141,10 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4299491D2911FDDA0038F443 /* DailyViewDataSourse.swift in Sources */,
+				4218DE96290A210400F8F6E4 /* DailyCollectionViewCell.swift in Sources */,
 				42AC5C9E290782C800C53D45 /* ViewController.swift in Sources */,
 				42AC5C9A290782C800C53D45 /* AppDelegate.swift in Sources */,
 				42AC5CA4290782C800C53D45 /* AccountingApp.xcdatamodeld in Sources */,
 				42AC5C9C290782C800C53D45 /* SceneDelegate.swift in Sources */,
+				4218DE92290A109700F8F6E4 /* DailyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
