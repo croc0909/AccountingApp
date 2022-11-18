@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4218DE92290A109700F8F6E4 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218DE91290A109700F8F6E4 /* DailyViewController.swift */; };
 		4218DE96290A210400F8F6E4 /* DailyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218DE95290A210400F8F6E4 /* DailyCollectionViewCell.swift */; };
+		42965067292618EE00E38276 /* AccountImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42965066292618EE00E38276 /* AccountImageViewController.swift */; };
+		4296506929261B3500E38276 /* AccountImageDataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4296506829261B3500E38276 /* AccountImageDataSourse.swift */; };
+		4296506B29261C6E00E38276 /* AccountImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4296506A29261C6E00E38276 /* AccountImageCollectionViewCell.swift */; };
 		4299491D2911FDDA0038F443 /* DailyViewDataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4299491C2911FDDA0038F443 /* DailyViewDataSourse.swift */; };
 		42AC5C9A290782C800C53D45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AC5C99290782C800C53D45 /* AppDelegate.swift */; };
 		42AC5C9C290782C800C53D45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AC5C9B290782C800C53D45 /* SceneDelegate.swift */; };
@@ -17,11 +20,20 @@
 		42AC5CA4290782C800C53D45 /* AccountingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42AC5CA2290782C800C53D45 /* AccountingApp.xcdatamodeld */; };
 		42AC5CA6290782CA00C53D45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42AC5CA5290782CA00C53D45 /* Assets.xcassets */; };
 		42AC5CA9290782CA00C53D45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42AC5CA7290782CA00C53D45 /* LaunchScreen.storyboard */; };
+		42B48907291361B700AB086A /* AccountDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B48906291361B700AB086A /* AccountDataModel.swift */; };
+		42B4890929139BE000AB086A /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B4890829139BE000AB086A /* AddAccountViewController.swift */; };
+		42C40E53291B3E5800657A33 /* AddListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C40E52291B3E5800657A33 /* AddListViewController.swift */; };
+		42E5373A291203CA0023D241 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E53739291203CA0023D241 /* AccountViewController.swift */; };
+		42E5373C29124D2A0023D241 /* AccountCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E5373B29124D2A0023D241 /* AccountCollectionViewCell.swift */; };
+		42E5373E291265130023D241 /* AccountDataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E5373D291265130023D241 /* AccountDataSourse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4218DE91290A109700F8F6E4 /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
 		4218DE95290A210400F8F6E4 /* DailyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCollectionViewCell.swift; sourceTree = "<group>"; };
+		42965066292618EE00E38276 /* AccountImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImageViewController.swift; sourceTree = "<group>"; };
+		4296506829261B3500E38276 /* AccountImageDataSourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImageDataSourse.swift; sourceTree = "<group>"; };
+		4296506A29261C6E00E38276 /* AccountImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		4299491C2911FDDA0038F443 /* DailyViewDataSourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewDataSourse.swift; sourceTree = "<group>"; };
 		42AC5C96290782C800C53D45 /* AccountingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccountingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42AC5C99290782C800C53D45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +44,12 @@
 		42AC5CA5290782CA00C53D45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42AC5CA8290782CA00C53D45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42AC5CAA290782CA00C53D45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42B48906291361B700AB086A /* AccountDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDataModel.swift; sourceTree = "<group>"; };
+		42B4890829139BE000AB086A /* AddAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
+		42C40E52291B3E5800657A33 /* AddListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListViewController.swift; sourceTree = "<group>"; };
+		42E53739291203CA0023D241 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		42E5373B29124D2A0023D241 /* AccountCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCollectionViewCell.swift; sourceTree = "<group>"; };
+		42E5373D291265130023D241 /* AccountDataSourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDataSourse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +66,7 @@
 		4218DE93290A10BD00F8F6E4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				42B48906291361B700AB086A /* AccountDataModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -56,6 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				4218DE95290A210400F8F6E4 /* DailyCollectionViewCell.swift */,
+				42E5373B29124D2A0023D241 /* AccountCollectionViewCell.swift */,
+				4296506A29261C6E00E38276 /* AccountImageCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -64,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				4299491C2911FDDA0038F443 /* DailyViewDataSourse.swift */,
+				42E5373D291265130023D241 /* AccountDataSourse.swift */,
+				4296506829261B3500E38276 /* AccountImageDataSourse.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -94,7 +117,11 @@
 				42AC5C9B290782C800C53D45 /* SceneDelegate.swift */,
 				42AC5C9D290782C800C53D45 /* ViewController.swift */,
 				42AC5C9F290782C800C53D45 /* Main.storyboard */,
+				42C40E52291B3E5800657A33 /* AddListViewController.swift */,
 				4218DE91290A109700F8F6E4 /* DailyViewController.swift */,
+				42E53739291203CA0023D241 /* AccountViewController.swift */,
+				42B4890829139BE000AB086A /* AddAccountViewController.swift */,
+				42965066292618EE00E38276 /* AccountImageViewController.swift */,
 				42AC5CA5290782CA00C53D45 /* Assets.xcassets */,
 				42AC5CA7290782CA00C53D45 /* LaunchScreen.storyboard */,
 				42AC5CAA290782CA00C53D45 /* Info.plist */,
@@ -174,12 +201,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C40E53291B3E5800657A33 /* AddListViewController.swift in Sources */,
 				4299491D2911FDDA0038F443 /* DailyViewDataSourse.swift in Sources */,
 				4218DE96290A210400F8F6E4 /* DailyCollectionViewCell.swift in Sources */,
+				42E5373C29124D2A0023D241 /* AccountCollectionViewCell.swift in Sources */,
+				42E5373A291203CA0023D241 /* AccountViewController.swift in Sources */,
+				42B48907291361B700AB086A /* AccountDataModel.swift in Sources */,
+				4296506B29261C6E00E38276 /* AccountImageCollectionViewCell.swift in Sources */,
 				42AC5C9E290782C800C53D45 /* ViewController.swift in Sources */,
 				42AC5C9A290782C800C53D45 /* AppDelegate.swift in Sources */,
+				42965067292618EE00E38276 /* AccountImageViewController.swift in Sources */,
+				42E5373E291265130023D241 /* AccountDataSourse.swift in Sources */,
 				42AC5CA4290782C800C53D45 /* AccountingApp.xcdatamodeld in Sources */,
 				42AC5C9C290782C800C53D45 /* SceneDelegate.swift in Sources */,
+				42B4890929139BE000AB086A /* AddAccountViewController.swift in Sources */,
+				4296506929261B3500E38276 /* AccountImageDataSourse.swift in Sources */,
 				4218DE92290A109700F8F6E4 /* DailyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
