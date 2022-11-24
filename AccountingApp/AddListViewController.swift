@@ -12,6 +12,7 @@ import UIKit
 class AddListViewController: UIViewController {
 
     @IBOutlet weak var addListTableView: UITableView!
+    @IBOutlet weak var accountTypeSegmentedControl: UISegmentedControl!
     
     var names = ["拍照", "從相簿"]
     var accounts = existingAccounts

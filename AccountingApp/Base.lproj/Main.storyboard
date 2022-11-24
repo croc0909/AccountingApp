@@ -464,7 +464,7 @@
                                         </collectionViewCellContentView>
                                         <connections>
                                             <outlet property="accountImageView" destination="u5m-Sa-W3f" id="OIy-dD-Ikm"/>
-                                            <segue destination="IV9-3n-FVv" kind="unwind" unwindAction="unwindToAddAccountFor:towards:" id="ery-Tr-zPp"/>
+                                            <segue destination="IV9-3n-FVv" kind="unwind" unwindAction="unwindToAddAccountFor:towards:" id="G94-3C-R63"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -707,6 +707,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="4zF-LP-D0B"/>
                     <connections>
+                        <outlet property="accountTypeSegmentedControl" destination="Zk3-K5-owh" id="po2-qA-jhR"/>
                         <outlet property="addListTableView" destination="wMa-yh-DWg" id="cHf-Qh-6dU"/>
                     </connections>
                 </viewController>
