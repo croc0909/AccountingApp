@@ -23,7 +23,7 @@ class AddListViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print("AddListViewController \(accounts)")
+        //print("AddListViewController \(accounts)")
     }
     
     func setTableView(){
@@ -88,19 +88,19 @@ extension AddListViewController:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if(indexPath.row == 0){
-            let cell = tableView.dequeueReusableCell(withIdentifier: "CostCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "AddCostCell", for: indexPath)
             return cell
         }else if(indexPath.row == 1){
-            let cell = tableView.dequeueReusableCell(withIdentifier: "CostTypeCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CostCategoryCell", for: indexPath)
             cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
             return cell
         }else if(indexPath.row == 2){
-            let cell = tableView.dequeueReusableCell(withIdentifier: "AccountCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "DeductionCell", for: indexPath)
             cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
             return cell
         }
         else{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "CostCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CostCategoryCell", for: indexPath)
             return cell
         }
     }

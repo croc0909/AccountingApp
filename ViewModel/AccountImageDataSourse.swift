@@ -10,6 +10,8 @@ import UIKit
 
 class AccountImageDataSource:NSObject,UICollectionViewDelegate,UICollectionViewDataSource{
     
+    var delegate:cellReturnPickImageDelegate?
+    
     var accountImages = imageList // 帳號縮圖陣列
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -25,7 +27,10 @@ class AccountImageDataSource:NSObject,UICollectionViewDelegate,UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("select \(accountImages[indexPath.row])")
+        
+        //print("select \(accountImages[indexPath.row])")
+        delegate?.cellReturnPickImageDelegate(sentData: accountImages[indexPath.row])
     }
-    
 }
+
+

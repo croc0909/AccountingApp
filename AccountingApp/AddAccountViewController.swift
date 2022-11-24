@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol pickImageDelegate{
+    func pickImageBack(sentData:Any)
+}
+
 class AddAccountViewController: UIViewController {
 
     @IBOutlet weak var accountTextField: UITextField!
@@ -14,16 +18,18 @@ class AddAccountViewController: UIViewController {
     @IBOutlet weak var accountColorWell: UIColorWell!
     @IBOutlet weak var accountImageView: UIImageView!
     
-    
     var dataToBeSent = accountData(accountName: "", accountAmount: "", backgroundColor: UIColor(red: 100, green: 100, blue: 100, alpha: 1),accountImage: UIImage(named: "purse")!)
+    
     var delegate:DismissBackDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+    }
     
     @IBAction func cancelAction(_ sender: Any) {
         dismissView()
@@ -48,6 +54,15 @@ class AddAccountViewController: UIViewController {
     }
     
     
+    @IBAction func unwindToAddAccount(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {
+        
+        if let sourceViewController = unwindSegue.source as? AccountImageViewController,
+           let thisLovers = sourceViewController.lovers{
+            print("get \(thisLovers)")
+        }
+    }
+    
+    
     func dismissView(){
         dismiss(animated: true, completion: nil)
     }
@@ -63,3 +78,10 @@ class AddAccountViewController: UIViewController {
     */
 
 }
+
+extension AddAccountViewController:pickImageDelegate{
+    func pickImageBack(sentData: Any) {
+        
+    }
+}
+

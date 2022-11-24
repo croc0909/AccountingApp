@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		4218DE92290A109700F8F6E4 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218DE91290A109700F8F6E4 /* DailyViewController.swift */; };
 		4218DE96290A210400F8F6E4 /* DailyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218DE95290A210400F8F6E4 /* DailyCollectionViewCell.swift */; };
+		422D9BAD292DC324009FAFFC /* AddCostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422D9BAC292DC324009FAFFC /* AddCostCell.swift */; };
 		42965067292618EE00E38276 /* AccountImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42965066292618EE00E38276 /* AccountImageViewController.swift */; };
 		4296506929261B3500E38276 /* AccountImageDataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4296506829261B3500E38276 /* AccountImageDataSourse.swift */; };
 		4296506B29261C6E00E38276 /* AccountImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4296506A29261C6E00E38276 /* AccountImageCollectionViewCell.swift */; };
 		4299491D2911FDDA0038F443 /* DailyViewDataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4299491C2911FDDA0038F443 /* DailyViewDataSourse.swift */; };
+		429CB116292F0D98005EAB7B /* CostCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CB115292F0D98005EAB7B /* CostCategoryCell.swift */; };
+		429CB118292F0E68005EAB7B /* DeductionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CB117292F0E68005EAB7B /* DeductionCell.swift */; };
 		42AC5C9A290782C800C53D45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AC5C99290782C800C53D45 /* AppDelegate.swift */; };
 		42AC5C9C290782C800C53D45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AC5C9B290782C800C53D45 /* SceneDelegate.swift */; };
 		42AC5C9E290782C800C53D45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AC5C9D290782C800C53D45 /* ViewController.swift */; };
@@ -31,10 +34,13 @@
 /* Begin PBXFileReference section */
 		4218DE91290A109700F8F6E4 /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
 		4218DE95290A210400F8F6E4 /* DailyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCollectionViewCell.swift; sourceTree = "<group>"; };
+		422D9BAC292DC324009FAFFC /* AddCostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCostCell.swift; sourceTree = "<group>"; };
 		42965066292618EE00E38276 /* AccountImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImageViewController.swift; sourceTree = "<group>"; };
 		4296506829261B3500E38276 /* AccountImageDataSourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImageDataSourse.swift; sourceTree = "<group>"; };
 		4296506A29261C6E00E38276 /* AccountImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		4299491C2911FDDA0038F443 /* DailyViewDataSourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewDataSourse.swift; sourceTree = "<group>"; };
+		429CB115292F0D98005EAB7B /* CostCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostCategoryCell.swift; sourceTree = "<group>"; };
+		429CB117292F0E68005EAB7B /* DeductionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeductionCell.swift; sourceTree = "<group>"; };
 		42AC5C96290782C800C53D45 /* AccountingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccountingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42AC5C99290782C800C53D45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42AC5C9B290782C800C53D45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +83,9 @@
 				4218DE95290A210400F8F6E4 /* DailyCollectionViewCell.swift */,
 				42E5373B29124D2A0023D241 /* AccountCollectionViewCell.swift */,
 				4296506A29261C6E00E38276 /* AccountImageCollectionViewCell.swift */,
+				422D9BAC292DC324009FAFFC /* AddCostCell.swift */,
+				429CB115292F0D98005EAB7B /* CostCategoryCell.swift */,
+				429CB117292F0E68005EAB7B /* DeductionCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,6 +212,7 @@
 			files = (
 				42C40E53291B3E5800657A33 /* AddListViewController.swift in Sources */,
 				4299491D2911FDDA0038F443 /* DailyViewDataSourse.swift in Sources */,
+				429CB116292F0D98005EAB7B /* CostCategoryCell.swift in Sources */,
 				4218DE96290A210400F8F6E4 /* DailyCollectionViewCell.swift in Sources */,
 				42E5373C29124D2A0023D241 /* AccountCollectionViewCell.swift in Sources */,
 				42E5373A291203CA0023D241 /* AccountViewController.swift in Sources */,
@@ -214,8 +224,10 @@
 				42E5373E291265130023D241 /* AccountDataSourse.swift in Sources */,
 				42AC5CA4290782C800C53D45 /* AccountingApp.xcdatamodeld in Sources */,
 				42AC5C9C290782C800C53D45 /* SceneDelegate.swift in Sources */,
+				429CB118292F0E68005EAB7B /* DeductionCell.swift in Sources */,
 				42B4890929139BE000AB086A /* AddAccountViewController.swift in Sources */,
 				4296506929261B3500E38276 /* AccountImageDataSourse.swift in Sources */,
+				422D9BAD292DC324009FAFFC /* AddCostCell.swift in Sources */,
 				4218DE92290A109700F8F6E4 /* DailyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

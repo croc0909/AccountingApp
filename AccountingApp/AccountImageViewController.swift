@@ -7,9 +7,15 @@
 
 import UIKit
 
+protocol cellReturnPickImageDelegate{
+    func cellReturnPickImageDelegate(sentData:Any)
+}
+
 class AccountImageViewController: UIViewController {
     
     @IBOutlet weak var accountImageCollectionView: UICollectionView!
+    // 回傳上一頁資料
+    var lovers: String?
     
     // data
     let accountImageDataSource = AccountImageDataSource()
@@ -17,7 +23,12 @@ class AccountImageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setCollectionView()
+        setDelegate()
         // Do any additional setup after loading the view.
+    }
+    
+    func setDelegate(){
+        accountImageDataSource.delegate = self
     }
 
     func setCollectionView(){
@@ -38,6 +49,11 @@ class AccountImageViewController: UIViewController {
         
         print("width \(width)")
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        lovers = "Hi"
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -50,3 +66,10 @@ class AccountImageViewController: UIViewController {
 
 }
 
+extension AccountImageViewController:cellReturnPickImageDelegate{
+    func cellReturnPickImageDelegate(sentData: Any) {
+        print("收到圖 \(sentData)")
+
+        dismiss(animated: true, completion: nil)
+    }
+}

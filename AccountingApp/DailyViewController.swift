@@ -29,7 +29,7 @@ class DailyViewController: UIViewController {
     }
 
     func setUpCalendar(){
-        print("currentYear \(dailyViewDataSource.currentYear) currentMonth \(dailyViewDataSource.currentMonth)")
+        //print("currentYear \(dailyViewDataSource.currentYear) currentMonth \(dailyViewDataSource.currentMonth)")
         timeLabel.text = "\(dailyViewDataSource.currentYear) \(dailyViewDataSource.months[dailyViewDataSource.currentMonth - 1])"
         calendarCollectionView.reloadData()
     }

@@ -464,6 +464,7 @@
                                         </collectionViewCellContentView>
                                         <connections>
                                             <outlet property="accountImageView" destination="u5m-Sa-W3f" id="OIy-dD-Ikm"/>
+                                            <segue destination="IV9-3n-FVv" kind="unwind" unwindAction="unwindToAddAccountFor:towards:" id="ery-Tr-zPp"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -478,6 +479,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rab-hA-Gne" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="IV9-3n-FVv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3695.419847328244" y="676.76056338028172"/>
         </scene>
@@ -544,11 +546,11 @@
                                 </segments>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wMa-yh-DWg">
-                                <rect key="frame" x="0.0" y="156" width="393" height="196"/>
+                                <rect key="frame" x="0.0" y="156" width="393" height="248"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CostCell" id="Nln-3O-1dE">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AddCostCell" id="Nln-3O-1dE" customClass="AddCostCell" customModule="AccountingApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="54.333332061767578"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nln-3O-1dE" id="Mqn-0b-HzX">
@@ -585,8 +587,12 @@
                                                 <constraint firstItem="LFR-Ft-qrg" firstAttribute="leading" secondItem="Mqn-0b-HzX" secondAttribute="leading" constant="40" id="x6K-rV-Dfh"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="costTextField" destination="iO1-NR-vY8" id="l1P-0w-vAf"/>
+                                            <outlet property="titleTypeLabel" destination="DoE-d5-DG1" id="2Yh-bt-7sT"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CostTypeCell" id="BQX-Gg-tcS">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CostCategoryCell" id="BQX-Gg-tcS" customClass="CostCategoryCell" customModule="AccountingApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="104.33333206176758" width="393" height="44.333332061767578"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BQX-Gg-tcS" id="u7V-lK-vD7">
@@ -624,19 +630,23 @@
                                                 <constraint firstItem="L3c-Wk-7BV" firstAttribute="top" secondItem="u7V-lK-vD7" secondAttribute="top" constant="10" id="VCX-qZ-YfH"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="currentTitleTypeLabel" destination="x8J-Cr-VJy" id="gDb-Jn-k6d"/>
+                                            <outlet property="titleTypeLabel" destination="KA1-uI-BIv" id="EJ7-30-3nH"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AccountCell" id="efv-Mb-y2j">
-                                        <rect key="frame" x="0.0" y="148.66666412353516" width="393" height="44.333332061767578"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DeductionCell" rowHeight="85" id="efv-Mb-y2j" customClass="DeductionCell" customModule="AccountingApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="148.66666412353516" width="393" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="efv-Mb-y2j" id="dc3-Rk-Psc">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="44.333332061767578"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="85"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="130" translatesAutoresizingMaskIntoConstraints="NO" id="suk-Qi-ODM">
-                                                    <rect key="frame" x="40" y="9.9999999999999982" width="313" height="24.333333333333329"/>
+                                                    <rect key="frame" x="40" y="10" width="313" height="65"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="扣款帳戶" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nD-Wd-Tsh">
-                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="24.333333333333332"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="65"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="100" id="6K4-Gg-CIs"/>
                                                             </constraints>
@@ -645,7 +655,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分離帳戶" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DqH-Q8-4sp">
-                                                            <rect key="frame" x="230" y="0.0" width="83" height="24.333333333333332"/>
+                                                            <rect key="frame" x="230" y="0.0" width="83" height="65"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="150" id="msS-My-d7I"/>
                                                             </constraints>
@@ -663,21 +673,14 @@
                                                 <constraint firstItem="suk-Qi-ODM" firstAttribute="top" secondItem="dc3-Rk-Psc" secondAttribute="top" constant="10" id="neV-ND-bK3"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="accountLabel" destination="DqH-Q8-4sp" id="XhS-gC-uS7"/>
+                                            <outlet property="titleTypeLabel" destination="7nD-Wd-Tsh" id="jEJ-G8-dtP"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5OS-aP-kUP">
-                                <rect key="frame" x="29" y="360" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <imageReference key="image" image="camera" catalog="system" symbolScale="large"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="takePhotoAction:" destination="2nc-sz-T0i" eventType="touchUpInside" id="533-I1-Jfy"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lt0-XR-gj9">
                                 <rect key="frame" x="167" y="718" width="59" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -685,6 +688,17 @@
                                 <buttonConfiguration key="configuration" style="plain" title="儲存"/>
                                 <connections>
                                     <action selector="saveAction:" destination="2nc-sz-T0i" eventType="touchUpInside" id="Wih-lh-ecw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5OS-aP-kUP">
+                                <rect key="frame" x="327" y="412" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="camera" catalog="system" symbolScale="large"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="takePhotoAction:" destination="2nc-sz-T0i" eventType="touchUpInside" id="533-I1-Jfy"/>
                                 </connections>
                             </button>
                         </subviews>
